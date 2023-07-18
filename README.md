@@ -14,8 +14,8 @@ Once you are inside `Frontend` folder run this command in the terminal `pug -w .
 
 ![Home](./Frontend/Images/Home.png)
 
-![Services](./Frontend/Images/Services.png)
+![Services](./Images/Services.png)
 
-![Portfolio](./Frontend/Images/Portfolio.png)
+![Portfolio](./Images/Portfolio.png)
 
-![Contact](./Frontend/Images/Contact.png)
+![Contact](./Images/Contact.png)
