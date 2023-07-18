@@ -12,7 +12,7 @@ Once you are inside `Frontend` folder run this command in the terminal `pug -w .
 
 ## Screenshots of the complete project
 
-![Home](./Frontend/Images/Home.png)
+![Home](./Images/Home.png)
 
 ![Services](./Images/Services.png)
 
