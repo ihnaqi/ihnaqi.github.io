@@ -710,6 +710,14 @@ h3.m-profession{
    display: block;
 }
 
+.portfolio:nth-of-type(3) .portfolio-item-inner .portfolio-img img{
+   /* width: 100%; */
+   aspect-ratio: 3 / 2;
+   object-fit: cover;
+   /* display: block; */
+}
+
+
 
 /* Contact Us Section */
 .contact-title{
