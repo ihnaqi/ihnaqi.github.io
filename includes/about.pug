@@ -45,6 +45,14 @@ section#about.about.section
                      for language, i in languages
                         + skills(logos[i], language)
             .row
+               section.person-info.padd-15
+                  h2 Social Media Links
+                  - let socialMediaNames = ["LinkedIn", "GitHub", "LeetCode", "CodeForces", "Kattis", "Twitter", "Instagram", "Facebook"]
+                  - logos = ["../Images/logos/linkedin.png", "../Images/logos/github.png", "../Images/logos/leetcode.png", "../Images/logos/codeforces.png", "https://open.kattis.com/images/site-logo?v=0a3f6018aacf449381741e45cf0ff6ba", "../Images/logos/twitter.png", "../Images/logos/instagram.png", "../Images/logos/facebook.png"]
+                  .skills#social-links
+                     for language, i in socialMediaNames
+                        + skills(logos[i], language)
+            .row
                .experience.padd-15
                   h3.title Experience
                   .row

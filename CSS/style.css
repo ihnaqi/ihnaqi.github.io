@@ -33,7 +33,7 @@ body{
    box-sizing: border-box;
 }
 
-ul{
+.nav li{
    list-style: none;
 }
 
@@ -439,6 +439,10 @@ h3.m-profession{
    height: 70%;
    width: 70%;
    filter: invert(100%);
+}
+
+#social-links div{
+   cursor: pointer;
 }
 
 .about .about-content .personal-info{
@@ -976,4 +980,13 @@ h3.m-profession{
       flex: 0 0 100%;
       max-width: 100%;
    }
+}
+
+.footer{
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 270px;
+   height: 1rem;
+   color: var(--text-black-900);
 }

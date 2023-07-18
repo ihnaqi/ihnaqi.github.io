@@ -81,7 +81,7 @@ function asideSectionTogglerBtn() {
 }
 
 document.querySelector("#cv-btn").addEventListener('click', () => {
-   var link = "https://drive.google.com/file/d/1OXUDLd4LKs7oEAS-RNTXLnFXv8MNAyJH/view?usp=drive_link"
+   var link = "https://drive.google.com/file/d/1M0y6bS1Mk8-3ZCCpk63tg2H8RdhZgX_B/view?usp=drive_link"
    var a = document.createElement("a");
    a.href = link;
    document.body.appendChild(a)
@@ -168,4 +168,45 @@ function contact() {
    }).then(
       message => alert(message)
    );
+}
+
+const socialLinks = document.getElementById("social-links").children
+
+for(let i = 0; i < socialLinks.length; i ++) {
+   switch(i){
+      case 0:
+         clickMe(socialLinks[i], "https://www.linkedin.com/in/ishtiaqnaqi")
+         break;
+      case 1:
+         clickMe(socialLinks[i], "https://www.github.com/ihnaqi")
+         break;
+      case 2:
+         clickMe(socialLinks[i], "https://leetcode.com/ihnaqi/")
+         break;
+      case 3:
+         clickMe(socialLinks[i], "https://codeforces.com/profile/ihnaqi")
+         break;
+      case 4:
+         clickMe(socialLinks[i], "https://open.kattis.com/users/ihnaqi")
+         break;
+      case 5:
+         clickMe(socialLinks[i], "https://www.twitter.com/ih_naqi")
+         break;
+      case 6:
+         clickMe(socialLinks[i], "https://www.instagram.com/in.naqi")
+         break;
+      case 7:
+         clickMe(socialLinks[i], "https://www.facebook.com/ishtiaqhussain.naqi")
+         break;
+   }
+}
+
+function clickMe(item, link) {
+   item.addEventListener('click', () => {
+      const a = document.createElement("a")
+      a.href = link
+      document.body.appendChild(a)
+      a.click()
+      document.removeChild(a)
+   })
 }

@@ -24,18 +24,18 @@
     <link rel="stylesheet" href="../CSS/style-switcher.css">
   </head>
   <body>
-    <div class="main-container">
-      <div class="aside">
+    <main class="main-container">
+      <header class="aside">
         <div class="logo"><a href="#"><span>Ishtiaq</span>.</a></div>
         <div class="nav-toggler"><span></span></div>
-        <ul class="nav">
+        <nav class="nav">
           <li><a class="active" href="#home"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
           <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
           <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
           <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-        </ul>
-      </div>
+        </nav>
+      </header>
       <div class="main-content">
         <section class="home active section" id="home">
           <div class="container">
@@ -81,6 +81,21 @@
                               <div class="skill-item"><img src="../Images/logos/mongodb.png" alt="MongoDB"></div>
                               <div class="skill-item"><img src="../Images/logos/docker.png" alt="Docker"></div>
                               <div class="skill-item"><img src="../Images/logos/figma.png" alt="Figma"></div>
+                    </div>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="person-info padd-15">
+                    <h2>Social Media Links</h2>
+                    <div class="skills" id="social-links">
+                              <div class="skill-item"><img src="../Images/logos/linkedin.png" alt="LinkedIn"></div>
+                              <div class="skill-item"><img src="../Images/logos/github.png" alt="GitHub"></div>
+                              <div class="skill-item"><img src="../Images/logos/leetcode.png" alt="LeetCode"></div>
+                              <div class="skill-item"><img src="../Images/logos/codeforces.png" alt="CodeForces"></div>
+                              <div class="skill-item"><img src="https://open.kattis.com/images/site-logo?v=0a3f6018aacf449381741e45cf0ff6ba" alt="Kattis"></div>
+                              <div class="skill-item"><img src="../Images/logos/twitter.png" alt="Twitter"></div>
+                              <div class="skill-item"><img src="../Images/logos/instagram.png" alt="Instagram"></div>
+                              <div class="skill-item"><img src="../Images/logos/facebook.png" alt="Facebook"></div>
                     </div>
                   </section>
                 </div>
@@ -316,13 +331,15 @@
           </div>
         </section>
       </div>
-    </div>
+    </main>
     <div class="style-switcher">
       <div class="style-switcher-toogler s-icon"><i class="fas fa-cog fa-spin"></i></div>
       <div class="day-night s-icon"><i class="fas"></i></div>
       <h2>Theme Colors</h2>
       <div class="colors"><span class="color-1" onclick="setActiveStyle('color-1')"></span><span class="color-2" onclick="setActiveStyle('color-2')"></span><span class="color-3" onclick="setActiveStyle('color-3')"></span><span class="color-4" onclick="setActiveStyle('color-4')"></span><span class="color-5" onclick="setActiveStyle('color-5')"></span></div>
     </div>
+    <footer class="footer"><span class="copy">&copy; year</span>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="../js/style-switcher.js"></script>
     <script src="../js/script.js"></script>
