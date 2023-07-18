@@ -138,7 +138,7 @@ ul{
 .btn{
    font-size: 16px;
    font-weight: 500;
-   padding: 12px 35px;
+   padding: 17px 35px;
    color : white;
    border-radius: 40px;
    display: inline-block;
@@ -717,8 +717,6 @@ h3.m-profession{
    /* display: block; */
 }
 
-
-
 /* Contact Us Section */
 .contact-title{
    color: var(--skin-color);
@@ -919,6 +917,9 @@ h3.m-profession{
       width: 270px;
    }
 
+   .btn {
+      padding-block: 20px;
+   }
    .contact .contact-info-item, .portfolio .portfolio-item{
       flex: 0 0 50%;
       max-width: 50%;

@@ -7,9 +7,12 @@
     <meta name="description" content="My name is Ishtiaq Naqi and I am a Software Engineer. I can create dynamic, user friendly, and highly optimized applications for your personal or business use.">
     <meta name="og:title" content="Ishtiaq Naqi">
     <meta name="og:description" content="My name is Ishtiaq Naqi and I am a Full Stack Software Developer. I can create dynamic, user friendly, and highly optimized applications for your personal or business use.">
-    <meta name="og:image" content="../Images/hero.jpg">
+    <meta property="og:image" content="./Images/hero.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
     <title>Ishtiaq Hussain Naqi, &reg; Sotware Developer</title>
-    <link rel="shortcut icon" type="image/jpg" href="../Images/hero.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="./Images/hero.jpg">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/skin/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -74,12 +77,16 @@
                               <div class="skill-item"><img src="../Images/logos/reactjs.png" alt="React.js"></div>
                               <div class="skill-item"><img src="../Images/logos/flutter.png" alt="Flutter"></div>
                               <div class="skill-item"><img src="../Images/logos/css.png" alt="CSS"></div>
+                              <div class="skill-item"><img src="../Images/logos/sql.png" alt="SQL"></div>
+                              <div class="skill-item"><img src="../Images/logos/mongodb.png" alt="MongoDB"></div>
+                              <div class="skill-item"><img src="../Images/logos/docker.png" alt="Docker"></div>
+                              <div class="skill-item"><img src="../Images/logos/figma.png" alt="Figma"></div>
                     </div>
                   </section>
                 </div>
                 <div class="row">
                   <div class="experience padd-15">
-                    <h3 class="title">Experience</h3>
+                    <h3 class="title">Skills</h3>
                     <div class="row">
                       <div class="timeline-box padd-15">
                         <div class="timeline shadow-dark">
@@ -259,41 +266,41 @@
                       <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-envelope"></i></div>
                         <h4>Email</h4>
-                        <p>ih.naqi@outlook.com</p>
+                        <p>ihnaqi.dev@gmail.com</p>
                       </div>
                       <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-globe-europe"></i></div>
                         <h4>Website</h4>
-                        <p>www.google.com</p>
+                        <p>https://ihnaqi.github.io/</p>
                       </div>
             </div>
             <h3 class="contact-title padd-15">Write me an email</h3>
             <h4 class="contact-sub-title padd-15">I'm very responsive</h4>
             <div class="row">
-              <div class="contact-form padd-15">
+              <form class="contact-form padd-15" onsubmit="contact(); reset(); return false;">
                 <div class="row">
                           <div class="form-item col-6 padd-15">
                             <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Name">
+                              <input class="form-control" type="text" id="name" placeholder="Name">
                             </div>
                           </div>
                           <div class="form-item col-6 padd-15">
                             <div class="form-group">
-                              <input class="form-control" type="email" placeholder="someone@example.com">
+                              <input class="form-control" type="email" id="email" placeholder="someone@example.com">
                             </div>
                           </div>
                 </div>
                 <div class="row">
                           <div class="form-item col-12 padd-15">
                             <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Subject">
+                              <input class="form-control" type="text" id="subject" placeholder="Subject">
                             </div>
                           </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" placeholder="Message"></textarea>
+                      <textarea class="form-control" name="" id="message" placeholder="Message"></textarea>
                     </div>
                   </div>
                   <div class="contact-form padd-15">
@@ -304,7 +311,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
@@ -319,5 +326,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="../js/style-switcher.js"></script>
     <script src="../js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

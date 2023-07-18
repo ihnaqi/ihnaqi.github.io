@@ -11,11 +11,11 @@ mixin contactFormInfo(inputFields)
    if(inputFields.col_12)
       .form-item.col-12.padd-15
          .form-group
-            input(type=inputFields.type class="form-control" placeholder=inputFields.placeholder)
+            input(type=inputFields.type class="form-control" id=inputFields.id placeholder=inputFields.placeholder)
    else
       .form-item.col-6.padd-15
          .form-group
-            input(type=inputFields.type class="form-control" placeholder=inputFields.placeholder)
+            input(type=inputFields.type id=inputFields.id class="form-control" placeholder=inputFields.placeholder)
 
 section#contact.contact.section
    .container
@@ -29,26 +29,26 @@ section#contact.contact.section
          + contactInfoItem(item)
          -item = {cls: 'fa fa-map-marker-alt', hd: 'Office', para: 'Karachi'}
          + contactInfoItem(item)
-         -item = {cls: 'fa fa-envelope', hd: 'Email', para: 'ih.naqi@outlook.com'}
+         -item = {cls: 'fa fa-envelope', hd: 'Email', para: 'ihnaqi.dev@gmail.com'}
          + contactInfoItem(item)
-         -item = {cls: 'fa fa-globe-europe', hd: 'Website', para: 'www.google.com'}
+         -item = {cls: 'fa fa-globe-europe', hd: 'Website', para: 'https://ihnaqi.github.io/'}
          + contactInfoItem(item)
       h3.contact-title.padd-15 Write me an email
       h4.contact-sub-title.padd-15 I'm very responsive
       .row
-         .contact-form.padd-15
+         form(class='contact-form padd-15' onsubmit="contact(); reset(); return false;")
             .row
-               - let inputFields = {type: 'text', placeholder:'Name'}
+               - let inputFields = {type: 'text', id:'name', placeholder:'Name'}
                + contactFormInfo(inputFields)
-               - inputFields = {type: 'email', placeholder: 'someone@example.com'}
+               - inputFields = {type: 'email', id:'email', placeholder: 'someone@example.com'}
                + contactFormInfo(inputFields)
             .row
-               - inputFields = {type: 'text', col_12: true, placeholder: 'Subject'}
+               - inputFields = {type: 'text', id:'subject', col_12: true, placeholder: 'Subject'}
                + contactFormInfo(inputFields)
             .row
                .form-item.col-12.padd-15
                   .form-group
-                     textarea(class="form-control" name="" id="" placeholder="Message")
+                     textarea(class="form-control" name="" id="message" placeholder="Message")
                .contact-form.padd-15
                   .row
                      .form-item.col-12.padd-15

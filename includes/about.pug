@@ -39,33 +39,14 @@ section#about.about.section
             .row
                section.person-info.padd-15
                   h2 Expertise
-                  - let languages = ["Java", "Node.js", "Rust", "HTML/CSS/JS", "Angular", "React.js", "Flutter", "CSS"]
-                  - let logos = ["../Images/logos/java.png", "../Images/logos/nodejs.png", "../Images/logos/rust.png", "../Images/logos/javascript.png", "../Images/logos/angular.png", "../Images/logos/reactjs.png", "../Images/logos/flutter.png", "../Images/logos/css.png"]
+                  - let languages = ["Java", "Node.js", "Rust", "HTML/CSS/JS", "Angular", "React.js", "Flutter", "CSS", "SQL", "MongoDB", "Docker", "Figma"]
+                  - let logos = ["../Images/logos/java.png", "../Images/logos/nodejs.png", "../Images/logos/rust.png", "../Images/logos/javascript.png", "../Images/logos/angular.png", "../Images/logos/reactjs.png", "../Images/logos/flutter.png", "../Images/logos/css.png",  "../Images/logos/sql.png",  "../Images/logos/mongodb.png",  "../Images/logos/docker.png", "../Images/logos/figma.png"]
                   .skills
                      for language, i in languages
                         + skills(logos[i], language)
-            //-    section.person-info.padd-15
-            //-       h2 Programming and Scripting Languages
-            //-       - let
-               //- .personal-info.padd-15
-               //-    .row
-               //-       - let paras = ["Birthday:", "Age:", "Website:", "Email:", "Degree:", "Phone:", "City:", "Freelance"]
-               //-       - let spans = ["25 May 1999", "22 Years", "www.google.com", "ih.naqi@outlook.com", "BS Computer Sciences", "+923045114480", "Chitral", "Available"]
-               //-       for para, i in paras
-               //-          + infoItem(para, spans[i])
-               //-    .row
-               //-       .buttons
-                        a(href="#contact" data-section-index=1 class="btn hire-me") Hire Me
-               //- .skills.padd-15
-               //-    .row
-               //-       - let skills = ["Java", "Node.js", "Rust", "HTML/CSS/JS", "Angular", "React.js", "Flutter"]
-               //-       - let percentages = ["90%", "60%", "95%", "70%", "75%", "50%", "40%"]
-
-               //-       for skill, i in skills
-               //-          + skillItems(skill, percentages[i])
             .row
                .experience.padd-15
-                  h3.title Experience
+                  h3.title Skills
                   .row
                      .timeline-box.padd-15
                         .timeline.shadow-dark
@@ -88,4 +69,3 @@ section#about.about.section
 
                            for duration, i in durations
                               + timelineItem(duration, timelineTitle[i], timelineDesc[i])
-               
