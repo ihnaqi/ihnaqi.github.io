@@ -1,0 +1,46 @@
+doctype html
+html
+   head
+      meta(charset="UTF-8")
+      meta(http-equivalent="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(name="description" content="My name is Ishtiaq Naqi and I am a Software Engineer. I can create dynamic, user friendly, and highly optimized applications for your personal or business use.")
+      meta(name="og:title" content="Ishtiaq Naqi")
+      meta(name="og:description" content="My name is Ishtiaq Naqi and I am a Full Stack Software Developer. I can create dynamic, user friendly, and highly optimized applications for your personal or business use.")
+      meta(name="og:image" content="../Images/hero.jpg")
+      title Ishtiaq Hussain Naqi, &reg; Sotware Developer
+      link(rel="shortcut icon" type="image/jpg" href="../Images/hero.jpg")
+      link(rel="stylesheet" href="../CSS/style.css")
+      link(rel="stylesheet" href="../CSS/skin/color-1.css")
+      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+      link(rel="stylesheet" href="../CSS/skin/color-1.css" class="alternate-style" title="color-1" disabled)
+      link(rel="stylesheet" href="../CSS/skin/color-2.css" class="alternate-style" title="color-2" disabled)
+      link(rel="stylesheet" href="../CSS/skin/color-3.css" class="alternate-style" title="color-3" disabled)
+      link(rel="stylesheet" href="../CSS/skin/color-4.css" class="alternate-style" title="color-4" disabled)
+      link(rel="stylesheet" href="../CSS/skin/color-5.css" class="alternate-style" title="color-5" disabled)
+      link(rel="stylesheet" href="../CSS/style-switcher.css")
+
+   body
+      .main-container
+         include includes/side
+         .main-content
+            include includes/home
+            include includes/about
+            include includes/services
+            include includes/portfolio
+            include includes/contact
+      .style-switcher
+         .style-switcher-toogler.s-icon
+            i.fas.fa-cog.fa-spin
+         .day-night.s-icon
+            i.fas
+         h2 Theme Colors
+         .colors
+            span(class="color-1" onclick="setActiveStyle('color-1')")
+            span(class="color-2" onclick="setActiveStyle('color-2')")
+            span(class="color-3" onclick="setActiveStyle('color-3')")
+            span(class="color-4" onclick="setActiveStyle('color-4')")
+            span(class="color-5" onclick="setActiveStyle('color-5')")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer")
+      script(src="../js/style-switcher.js")
+      script(src="../js/script.js")

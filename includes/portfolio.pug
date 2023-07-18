@@ -1,0 +1,28 @@
+mixin portfolioImage(img)
+   .portfolio-item.padd-15
+      .portfolio-item-inner.shadow-dark
+         .portfolio-img
+            img(src=img alt="")
+
+section#portfolio.portfolio.section
+   .container
+      .row
+         .section-title.padd-15
+            h2 Portfolio
+      .row
+         .portfolio-heading.padd-15
+            h2 My Last Projects :
+      .row
+         //- Portfolio item goes here
+         - const image = "../Images/vanlife.png"
+         + portfolioImage(image)
+         - const image2 = "../Images/home.png"
+         + portfolioImage(image2)
+         - const image3 = "../Images/tenzies.png"
+         + portfolioImage(image3)
+         - const image4 = "../Images/hope.jpg"
+         + portfolioImage(image4)
+         - const image5 = "../Images/os.jpg"
+         + portfolioImage(image5)
+         - const image6 = "../Images/cp.jpg"
+         + portfolioImage(image6)

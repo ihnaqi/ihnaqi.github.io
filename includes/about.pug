@@ -1,0 +1,91 @@
+mixin infoItem(para, span)
+   .info-item.padd-15
+      p= para
+         span= span
+
+mixin skillItems(skill, percentage)
+   .skill-item.padd-15
+      h5= skill
+         .progress
+            div(class="progress-in" style="width: 70%;")
+            .skill-percent= percentage
+
+mixin timelineItem(timeline, timelineTitle, timelineDesc)
+   .timeline-item
+      .circle-dot
+      h3(class="timeline-date")
+         i.fa.fa-calendar
+         | #{timeline}
+      h4(class="timeline-title")= timelineTitle
+      p.timeline-text
+         | #{timelineDesc}
+
+mixin skills(logo, skill)
+   .skill-item
+      img(src=`${logo}` alt=`${skill}`)
+
+section#about.about.section
+   .container
+      .row
+         .section-title.padd-15
+            h2 About Me
+      .row
+         .about-content.padd-15
+            .row
+               .about-text
+                  h3 I'm Ishtiaq Naqi&nbsp;
+                     span Web Designer and Developer
+                  p I am a Software Developer, I can create or rewamp web and mobile applications for your personal or business use. I have years of experience developing applications.
+            .row
+               section.person-info.padd-15
+                  h2 Expertise
+                  - let languages = ["Java", "Node.js", "Rust", "HTML/CSS/JS", "Angular", "React.js", "Flutter", "CSS"]
+                  - let logos = ["../Images/logos/java.png", "../Images/logos/nodejs.png", "../Images/logos/rust.png", "../Images/logos/javascript.png", "../Images/logos/angular.png", "../Images/logos/reactjs.png", "../Images/logos/flutter.png", "../Images/logos/css.png"]
+                  .skills
+                     for language, i in languages
+                        + skills(logos[i], language)
+            //-    section.person-info.padd-15
+            //-       h2 Programming and Scripting Languages
+            //-       - let
+               //- .personal-info.padd-15
+               //-    .row
+               //-       - let paras = ["Birthday:", "Age:", "Website:", "Email:", "Degree:", "Phone:", "City:", "Freelance"]
+               //-       - let spans = ["25 May 1999", "22 Years", "www.google.com", "ih.naqi@outlook.com", "BS Computer Sciences", "+923045114480", "Chitral", "Available"]
+               //-       for para, i in paras
+               //-          + infoItem(para, spans[i])
+               //-    .row
+               //-       .buttons
+                        a(href="#contact" data-section-index=1 class="btn hire-me") Hire Me
+               //- .skills.padd-15
+               //-    .row
+               //-       - let skills = ["Java", "Node.js", "Rust", "HTML/CSS/JS", "Angular", "React.js", "Flutter"]
+               //-       - let percentages = ["90%", "60%", "95%", "70%", "75%", "50%", "40%"]
+
+               //-       for skill, i in skills
+               //-          + skillItems(skill, percentages[i])
+            .row
+               .experience.padd-15
+                  h3.title Experience
+                  .row
+                     .timeline-box.padd-15
+                        .timeline.shadow-dark
+                           //- timeline items
+                           - let durations = ["2004 - 2013", "2022 - 2002", "2023 - 2023"].reverse()
+                           - let timelineTitle = ["WWF-Pakistan", "Siddique Memon Foundation", "Apna Devs"].reverse()
+                           - let timelineDesc = ["I have been member \"Nature Club\", an initiative taken by WWF-Pakistan to cope will poaching of migratory birds and little local birds.", "I worked with Siddique memon foundation as a social intern during summers 2022. Our task were to promote social mobilization and to work as volunteers in affected areas.", "I worked with Apna Devs as backend development intern for a period of three months. At here I worked in MVP architecture, APIs, MongoDB database and Docker"].reverse()
+
+                           for duration, i in durations
+                              + timelineItem(duration, timelineTitle[i], timelineDesc[i])
+               .education.padd-15
+                  h3.title Education
+                  .row
+                     .timeline-box.padd-15
+                        .timeline.shadow-dark
+                           //- timeline items
+                           - durations = ["2014-2016", "2016 - 2018", "2019 - 2023"].reverse()
+                           - timelineTitle = ["SSC", "HSSC", "BSCS"].reverse()
+                           - timelineDesc = ["I completed my secondary school certificate (SSC) from Aga Khan Higher Secondary School Seenlasht, Chitral KPK.", "I did my intermediate (HSSC) from Government Degree College Chitral. I studied Mathematics, Physics and Chemistry during my HSSC in Government College for Boys Chitral.", "I'm currently pursuing an undergraduate degree in computer sciences from Institute of Business Administaraion (IBA) Karachi."].reverse()
+
+                           for duration, i in durations
+                              + timelineItem(duration, timelineTitle[i], timelineDesc[i])
+               
