@@ -156,14 +156,13 @@ for (let i = 0; i < items.length; i++) {
 function contact() {
    const sender = document.getElementById("email").value;
    const subject = document.getElementById('subject').value;
-   const message = `${document.getElementById('name').value}\n\n${document.getElementById('message').value}`
-   console.log(`Sender: ${sender}\nSubject: ${subject}\nMessage: ${message}`)
+   const message = `${document.getElementById('name').value}\nSender: ${sender}\n\n${document.getElementById('message').value}`
    Email.send({
       Host: "smtp.elasticemail.com",
       Username: "ih.spammable@gmail.com",
       Password: "AB5E6228F4BE85D69F3BDA5023F39C1C32F7",
       To: 'ihnaqi.dev@gmail.com',
-      From: sender,
+      From: "ih.spammable@gmail.com",
       Subject: subject,
       Body: message
    }).then(
