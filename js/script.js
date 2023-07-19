@@ -210,3 +210,27 @@ function clickMe(item, link) {
       document.removeChild(a)
    })
 }
+
+document.getElementById("phone").addEventListener('click', () => {
+   const a = document.createElement("a")
+   document.body.appendChild(a)
+   a.href = `tel:+923045114480`
+   a.click()
+   document.body.removeChild(a)
+})
+document.getElementById("email_").addEventListener('click', () => {
+   const a = document.createElement("a")
+   document.body.appendChild(a)
+   a.href = `mailto:ihnaqi.dev@gmail.com`
+   a.click()
+   document.body.removeChild(a)
+})
+
+document.getElementById("website").addEventListener('click', () => {
+   const a = document.createElement("a")
+   document.body.appendChild(a)
+   a.href = `https://ihnaqi.github.io`
+   a.click()
+   document.body.removeChild(a)
+})
+

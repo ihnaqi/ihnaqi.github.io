@@ -1,6 +1,6 @@
 
-mixin contactInfoItem(item)
-   .contact-info-item.padd-15
+mixin contactInfoItem(item, id)
+   .contact-info-item.padd-15(id=id)
       .icon
          i(class=item.cls)
       h4= item.hd
@@ -25,14 +25,14 @@ section#contact.contact.section
       h3.contact-title.padd-15 Do you have any questions?
       h4.contact-sub-title.padd-15 I'm at your service
       .row
-         - let item = {cls: "fa fa-phone", hd: 'Call us on', para: '+9230451154480'}
-         + contactInfoItem(item)
+         - let item = {cls: "fa fa-phone", hd: 'Call me', para: '+9230451154480'}
+         + contactInfoItem(item, "phone")
          -item = {cls: 'fa fa-map-marker-alt', hd: 'Location', para: 'Karachi'}
-         + contactInfoItem(item)
+         + contactInfoItem(item, "location")
          -item = {cls: 'fa fa-envelope', hd: 'Email', para: 'ihnaqi.dev@gmail.com'}
-         + contactInfoItem(item)
+         + contactInfoItem(item, "email_")
          -item = {cls: 'fa fa-globe-europe', hd: 'Website', para: 'https://ihnaqi.github.io/'}
-         + contactInfoItem(item)
+         + contactInfoItem(item, "website")
       h3.contact-title.padd-15 Write me an email
       h4.contact-sub-title.padd-15 I'm very responsive
       .row
