@@ -696,8 +696,8 @@ h3.m-profession{
 
 .contact .contact-info-item .icon{
    display: inline-block;
-
-}
+   cursor: pointer;
+   }
 
 .contact .contact-info-item .icon .fa{
    font-size: 25px;
