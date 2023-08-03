@@ -8,7 +8,7 @@ var typed = new Typed(".typing", {
       "Node.js Developer",
       "Flutter Developer",
    ],
-   typeSpeed: 78,
+   typeSpeed: 50,
    BackSpeed: 60,
    loop: true,
 });
@@ -81,7 +81,7 @@ function asideSectionTogglerBtn() {
 }
 
 document.querySelector("#cv-btn").addEventListener('click', () => {
-   var link = "https://drive.google.com/file/d/1M0y6bS1Mk8-3ZCCpk63tg2H8RdhZgX_B/view?usp=drive_link"
+   var link = "https://drive.google.com/file/d/1NknxhQp8cvExUjMni55jMPJD7xxwVsvK/view?usp=drive_link"
    var a = document.createElement("a");
    a.href = link;
    document.body.appendChild(a)
